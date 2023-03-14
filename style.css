@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:poppins;
+    box-sizing:border-box;
+}
+body{
+    /* background-color:pink; */
+    background-color: #f9f9f9;
+    padding: 0;
+    margin:0;
+    width:100%;
+}
+
+#sidebar{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: white;
+}
+#brand{
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+    height: 70px;
+}
+#logo{
+    background-color: #5D60EF;;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+}
+#brand-name{
+    padding: 7px;
+    margin: 7px;
+    font-weight: bolder;
+}
+#list ul{
+    padding:20px;
+} 
+#list li{
+    list-style: none;
+}
+#list i{
+    margin: 3px;
+}
+#list a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    color: gray;
+}
+#list a:hover{
+    background-color: #5D60EF;
+    border-radius: 10px;
+    color:#f9f9f9;
+}
+#content{
+    position:relative;
+    width:calc(100%-200px); 
+    left:200px;
+    
+}
+#navbar{
+    height: 70px;
+    width:100%; 
+    position:fixed;
+    top:0;
+    display: flex;
+    gap:170px;
+    background-color: white;
+}
+
+#navbar #item{
+    padding: 10px;
+    margin:10px;
+}
+#navbar #item h4{
+    font-weight: bolder;
+}
+
+#navbar #searchbar{
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 13px;
+    width:300px;
+    height:45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#searchbar i{
+    color:#5D60EF;
+    font-weight: bolder;
+    width:50px;
+}
+#searchbar input{
+    background-color: #f9f9f9;
+    outline: none;
+    border: none;
+    width:250px;
+}
+#navbar #language{
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    padding:10px;
+    margin: 10px;
+}
+#language img{
+    height:25px;
+    width:25px;
+    border-radius:100%;
+}
+#language span{
+    font-weight: bolder;
+    font-size: 12px;
+}
+#language i{
+    font-size: small;
+    font-weight: bolder;
+}
+#profile{
+    display:flex;
+    padding: 10px;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+}
+#notification{
+    background-color:rgba(255, 207, 162, 0.568);
+    border-radius: 5px;
+    padding:5px;
+}
+
+#notification #bell{
+    color:orange;
+    
+}
+#profile img{
+    border-radius: 10px;
+    height:40px;
+    width:40px;
+    margin: 5px;
+}
+#profile-name{
+    margin-right:5px; 
+    line-height: 15px;
+}
+#profile-name #name{
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 0%;
+    margin: 0%;
+}
+#profile-name #domain{
+    font-size: 10px;
+    color: gray;
+}
+#profile #drop{
+    margin: 5px;
+    font-size: small;
+}
+@media screen and (max-width:1440px) {
+    #navbar{
+        gap:75px;
+    }
+}

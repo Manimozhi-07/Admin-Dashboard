@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <div id="sidebar">
+        <div id="brand">
+          <div id="logo">
+            <i class="bi bi-amd"></i>
+          </div>
+          <div id="brand-name">
+            <h4>Dabang</h4>
+          </div>
+        </div>
+        
+        <div id="list">
+          <ul>
+            <li>
+                <a href="#">
+                  <i class="bi bi-pie-chart-fill" data-toggle="tooltip" title="Dashboard"></i>&nbsp;
+                  <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-bar-chart"  data-toggle="tooltip" title="Leaderboard"></i> &nbsp;
+                <span>Leaderboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-cart"  data-toggle="tooltip"  title="Order"></i> &nbsp;
+                <span>Order</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-bag"  data-toggle="tooltip"  title="Products"></i> &nbsp;
+                <span>Products</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-graph-up"  data-toggle="tooltip"  title="Sales Report"></i>&nbsp;
+                <span >Sales Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-chat-left-dots" data-toggle="tooltip"  title="Messages"></i> &nbsp;
+                <span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" >
+                <i class="bi bi-gear" data-toggle="tooltip"  title="Settings"></i> &nbsp;
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-box-arrow-right" data-toggle="tooltip"  title="Signout"></i> &nbsp;
+                <span >Signout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+    <div id="content">
+      <div id="navbar">
+        <!--name starts-->
+        <div class="navdiv" id="item">
+          <h4>Dashboard</h4>        
+        </div>
+         <!--name ends-->
+
+         <!--searchbar starts-->
+        <div class="navdiv" id="searchbar">
+          <label for="search"><i class="bi bi-search"></i></label>&nbsp;
+          <input type="text" name="search" placeholder="Search here...">
+        </div>
+         <!--searchbar ends-->
+
+         <!--language starts-->
+        <div class="navdiv" id="language">
+          <img src="images/download.png" alt="">&nbsp;
+          <span>Eng(US)</span>&nbsp;
+          <i class="bi bi-chevron-down"></i>
+        </div>
+         <!--language ends-->
+
+         <!--profile starts-->
+        <div class="navdiv" id="profile">
+          <div id="notification">
+            <i class="bi bi-bell" id="bell"></i>
+          </div>&nbsp;
+          <img src="images/user1.jpg" alt="">&nbsp;
+          <div id="profile-name">
+            <span id="name">Musfig</span><br>
+            <span id="domain">Admin</span>
+          </div>
+          <i class="bi bi-chevron-down" id="drop"></i>
+        </div>
+        <!--profile ends-->
+
+      </div>
+     <!--navbar ends-->
+
+    </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
