@@ -12,17 +12,19 @@
 </head>
 <body>
   <!--Sidebar Starts-->
-  <div id="sidebar" class="collapse-show">
+  <div id="sidebar">
         <div id="brand">
+          <button class="button" title="collapisblebutton" data-bs-toggle="collapse" data-bs-target="#list"><i class="bi bi-list"></i></button>&nbsp;
           <div id="logo">
             <i class="bi bi-amd"  title="Dabang"></i>
           </div>
           <div id="brand-name">
             <h4>Dabang</h4>
+            
           </div>
         </div>
         
-        <div id="list">
+        <div id="list" class="collapse-show">
           <ul>
             <li>
                 <a href="#">
@@ -83,7 +85,7 @@
     <div id="navbar">
       <!--name starts-->
       <div id="item">
-        <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#sidebar"><i class="bi bi-list"></i></button>&nbsp;
+        <i class="bi bi-pie-chart-fill"  title="Dashboard"></i>&nbsp;
         <h4>Dashboard</h4>        
       </div>
       <!--name ends-->
@@ -100,9 +102,9 @@
         <img src="images/download.png" alt="">&nbsp;
         <!-- <span>Eng(US)</span>&nbsp; -->
         <!-- <i class="bi bi-chevron-down"></i> -->
-        <select>
+        <select title="languagedropdown">
           <option value="us">ENG(US)</option>
-          <option value="ind">ENG(IND)</option>
+          <option value="in">ENG(IN)</option>
         </select>
       </div>
       <!--language ends-->
@@ -112,7 +114,7 @@
         <div id="notification">
           <i class="bi bi-bell" id="bell"></i>
         </div>&nbsp;
-        <img src="images/user1.jpg" alt="">&nbsp;
+        <img src="images/user1.jpg" alt="" title="Musfig">&nbsp;
         <div id="profile-name">
           <span id="name">Musfig</span><br>
           <span id="domain">Admin</span>
@@ -145,7 +147,7 @@
           <div class="rows">
             <div class="b" style="background-color: rgb(250, 213, 219);">
              
-              <i class="bi bi-bar-chart"  style="background-color: palevioletred;"></i>
+              <i class="bi bi-bar-chart" title="Total Sales" style="background-color: palevioletred;"></i>
               
               <span class="num">$1k</span> <br>
               <div class="box-base">
@@ -154,7 +156,7 @@
               </div>
             </div>
             <div class="b" style="background-color: rgb(241, 240, 147) ;">
-              <i class="bi bi-journal" style=" background-color: orange;"></i>
+              <i class="bi bi-journal" title="Total Order" style=" background-color: orange;"></i>
               <span class="num">300</span> <br>
               <div class="box-base">
                 <span class="title">Total Order</span><br>
@@ -162,7 +164,7 @@
               </div>
             </div>
             <div class="b" style="background-color: rgb(190, 248, 190) ">
-              <i class="bi bi-bookmark" style=" background-color: rgb(85, 180, 85) "></i>
+              <i class="bi bi-bookmark" title="Products Sold" style=" background-color: rgb(85, 180, 85) "></i>
               <span class="num">5</span> <br>
               <div class="box-base">
                 <span class="title">Products Sold</span><br>
@@ -170,7 +172,7 @@
               </div>
             </div>
             <div class="b" style="background-color: rgb(252, 208, 252)">
-              <i class="bi bi-person-plus" style=" background-color:  rgb(216, 95, 216)"></i>
+              <i class="bi bi-person-plus" title="New Customer" style=" background-color:  rgb(216, 95, 216)"></i>
               <span class="num">8</span> <br>
               <div class="box-base">
                 <span class="title">New Customers</span><br>
@@ -326,6 +328,7 @@
                 </tr>
               </table>
         </div>
+        
         <div class="c" id="c7">
           <div class="heading">
           <span>Sales Mapping by Country</span>
@@ -333,7 +336,9 @@
         <img id="map" src="images/map.jpg" alt="">
         </div>
         <div class="c" id="c8">
-          <span class="heading">Volume vs Service Level</span>
+          <div class="heading">
+          <span>Volume vs Service Level</span>
+          </div>
               <img class="imgsm" src="images/r3c3.jpg" alt="">
               <hr>
               <div class="base">
@@ -355,6 +360,7 @@
                 </div>
         </div>
       </div> 
+      
     </div>
     <!--Main Ends-->
   </div>
