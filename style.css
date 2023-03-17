@@ -94,9 +94,7 @@ body{
 #navbar #item h4{
     font-weight: bolder;
 }
-#navbar #item i{
-    display:none;
-}
+
 #navbar #searchbar{
     background-color: #f9f9f9;
     padding: 10px;
@@ -193,6 +191,7 @@ body{
 }
 #main .r{
     display:flex;
+   
     width:100%;
     justify-content: space-around;
 }
@@ -240,6 +239,9 @@ body{
     width:100%;
     justify-content: space-between;
     margin-top: 10px;
+}
+#box-row{
+    flex-wrap: wrap;
 }
 .b{
     /* width:20%; */
@@ -425,6 +427,7 @@ th{
     
     #content{
         width:100%;
+        
         left:0;
     }
 }
@@ -439,19 +442,14 @@ th{
 } 
 @media screen and (max-width:730px){
      #navbar h4{
-        font-size: 20px;
+        font-size: 15px;
     } 
     #navbar #searchbar{
         width:250px ;
     }
-    #navbar #language img{
-        display:none;
-    }
-    #navbar #profile #profile-name,#drop{
-        display: none;
-    }
     #main .r{
         display:block;
+        
     }
     #c1,#c2,#c3,#c6{
         width:98%;
@@ -461,15 +459,16 @@ th{
         width:46%;
     }
 }
-@media screen and (max-width:585px){
-    #navbar #item i{
-        display: inline;
-        font-size: 20px;
+@media screen and (max-width:650px){
+    #navbar{
+        flex-direction: column;
     }
     #navbar #item h4{
-        display:none;
-    }
+        font-size: 20px;
+       }
+    
 }
+
 @media screen and (max-width:574px){
     #c4,#c5,#c7,#c8{
         
